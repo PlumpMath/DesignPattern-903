@@ -44,6 +44,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractFactoryPattern\AnnualGarden.cs" />
+    <Compile Include="AbstractFactoryPattern\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbstractFactoryPattern\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbstractFactoryPattern\Garden.cs" />
+    <Compile Include="AbstractFactoryPattern\GdPic.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AbstractFactoryPattern\PerennialGarden.cs" />
+    <Compile Include="AbstractFactoryPattern\Plant.cs" />
+    <Compile Include="AbstractFactoryPattern\VeggieGarden.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="SimpleFactory\FirstFirst.cs" />
     <Compile Include="SimpleFactory\Form1.cs">
       <SubType>Form</SubType>
@@ -54,8 +69,10 @@
     <Compile Include="SimpleFactory\LastFirst.cs" />
     <Compile Include="SimpleFactory\NameFactory.cs" />
     <Compile Include="SimpleFactory\Namer.cs" />
-    <Compile Include="SimpleFactory\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AbstractFactoryPattern\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SimpleFactory\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
